@@ -1,0 +1,57 @@
+﻿<Page x:Class="MedicineDesktop.Auth.Authorization"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MedicineDesktop.Auth"
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="400"
+      Title="Authorization">
+
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1.20*"></RowDefinition>
+            <RowDefinition Height="5.5*" ></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <TextBlock FontWeight="DemiBold" FontSize="25" FontFamily="Aharoni" VerticalAlignment="Center" HorizontalAlignment="Center">Log In</TextBlock>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.5*"></RowDefinition>
+                <RowDefinition Height="0.65*"></RowDefinition>
+                <RowDefinition Height="0.65*"></RowDefinition>
+                <RowDefinition Height="0.5*"></RowDefinition>
+                <RowDefinition Height="0.65*"></RowDefinition>
+                <RowDefinition Height="0.65*"></RowDefinition>
+                <RowDefinition Height="0.5*"></RowDefinition>
+                <RowDefinition Height="0.85*"></RowDefinition>
+                <RowDefinition Height="0.5*"></RowDefinition>
+                
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="1">
+                <TextBlock Padding="5,0,0,0" FontWeight="DemiBold" FontSize="18" FontFamily="Aharoni" VerticalAlignment="Center" >Username:</TextBlock>
+            </Grid>
+            <Grid Grid.Row="2">
+                <TextBox Padding="0,10,0,0"></TextBox>
+            </Grid>
+            <Grid Grid.Row="4">
+                <TextBlock Padding="5,0,0,0" FontWeight="DemiBold" FontSize="18" FontFamily="Aharoni" VerticalAlignment="Center" >Password:</TextBlock>
+            </Grid>
+            <Grid Grid.Row="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1.75*"></ColumnDefinition>
+                    <ColumnDefinition  Width="0.15*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <PasswordBox Grid.Column="0" Padding="0,10,0,0"></PasswordBox>
+                <Button  Grid.Column="1"></Button>
+            </Grid>
+            <Grid Grid.Row="7">
+                <Border>
+                    <Button Click="Login_Button" Margin="40,5,40,5">Log in</Button>
+                </Border>
+            </Grid>
+            
+        </Grid>
+    </Grid>
+</Page>
